@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.video-react .video-react-big-play-button {
+  left: 370px !important;
+  top: 200px !important;
+}

@@ -1,0 +1,95 @@
+.videoContainer {
+  position: relative;
+  width: 800px;
+  height: 450px;
+  margin: 80px auto;
+}
+
+.video-react .video-react-big-play-button {
+  left: 370px !important;
+
+  top: 200px !important;
+}
+
+.leftControlButton,
+.rightControlButton {
+  background: none;
+}
+
+.leftControlButton img,
+.rightControlButton img {
+  height: 20px;
+  background: none;
+  color: white;
+}
+
+.ratioMenu {
+  padding: 2px !important;
+}
+.minimizeButton {
+  border-radius: 10px;
+  border: none;
+  background-color: lightslategrey;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1);
+}
+.minimizedContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 169px; /* Maintain 16:9 aspect ratio */
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.minimizedContainer video {
+  width: 70%;
+  height: auto;
+}
+
+.minimizedContainer button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.closeButton {
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media screen and (max-width: 600px) {
+  .videoContainer {
+    width: 100%;
+    max-width: none;
+    margin: 40px auto;
+  }
+
+  .video-react .video-react-big-play-button {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .minimizedContainer {
+    width: 90%;
+    max-width: none;
+  }
+  .minimizeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
